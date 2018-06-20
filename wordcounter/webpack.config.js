@@ -1,4 +1,5 @@
 const path = require('path')
+
 module.exports = {
     entry: {
         app: './src/index.js'
@@ -10,10 +11,10 @@ module.exports = {
     module: {
         rules: [
             {
-            test: /\.js$/,//this rexp specially look for .js
-            include: path.resolve(__dirname,"src"),
-            use: ['babel-loader']
+                test: /\.js$/,
+                include: path.resolve(__dirname, "src"),
+                use: ['babel-loader']
             }
         ]
-    },
+    }
 }
